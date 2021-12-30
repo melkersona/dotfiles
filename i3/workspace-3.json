@@ -1,0 +1,60 @@
+// vim:ts=4:sw=4:et
+{
+    // stacked split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "stacked",
+    "marks": [],
+    "percent": null,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "Spotify",
+            "percent": 0.5,
+            "swallows": [
+               {
+                "class": "^Spotify$",
+               // "instance": "^spotify$",
+               // "machine": "^MAEN$",
+               // "title": "^Spotify$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "user_off",
+            "geometry": {
+               "height": 1016,
+               "width": 1880,
+               "x": 1940,
+               "y": 44
+            },
+            "marks": [],
+            "name": "general - Discord",
+            "percent": 0.5,
+            "swallows": [
+               {
+                "class": "^discord$",
+               // "instance": "^discord$",
+               // "machine": "^MAEN$",
+               // "title": "^general\\ \\-\\ Discord$",
+               // "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

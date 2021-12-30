@@ -1,0 +1,21 @@
+SCRIPT_DIR=~/.config/i3blocks
+
+[time]
+command=~/.config/i3blocks/time
+interval=1
+#TZ_FILE=~/.tz
+STRFTIME_FORMAT=%a %d %b %I:%M.%S
+TZONES=$DEFAULT_TZ,Brazil/East,Australia/Brisbane,Asia/Calcutta
+TZ_LABELS=,Brazil,AU,Hyderabad
+align=center
+
+[volume]
+command=~/.config/i3blocks/volume
+#LABEL=♪ 
+LABEL=量
+interval=once
+signal=10
+#STEP=5%
+#MIXER=[determined automatically]
+#SCONTROL=[determined automatically]
+#NATURAL_MAPPING=0
