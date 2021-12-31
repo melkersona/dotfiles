@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-MODULES="i3 xwindow time tray volume"
+MODULES="i3 xwindow time volume"
 
 killall -q polybar
 

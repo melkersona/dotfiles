@@ -35,6 +35,8 @@ monitor = ${env:MONITOR:}
 background = ${colors.background}
 foreground = ${colors.foreground}
 
+enable=ipc = true
+
 offset-y = 5
 
 font-0 = CascadiaCode:size=13;2
@@ -43,8 +45,8 @@ font-1 = fixed:pixelsize=13;1
 font-2 = unifont:fontformat=truetype:size=13:antialias=false;0
 font-3 = siji:pixelsize=13;1
 font-4 = NotoSansSymbols2:size=13;3
-font-5 = sazanami mincho:fontformat=truetype:size=13
-font-6 = HanaMinA:size=13
+font-5 = sazanami mincho:fontformat=truetype:size=13;2 #Is used for VOL atm
+font-6 = HanaMinA:size=13;2
 #module-margin-left = 1
 #module-margin-right = 2
 #padding-left = 0
