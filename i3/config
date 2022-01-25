@@ -8,6 +8,7 @@
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
+include ~/.config/i3/assignments.conf
 
 set $mod Mod4
 
@@ -251,7 +252,7 @@ workspace $ws10 output $screen2
 for_window [class=".*"] border pixel 0
 #gaps outer 10
 gaps inner 25
-gaps top 10
+gaps top 15
 #smart_borders on
 #smart_gaps on
 #hide_edge_borders smart_no_gaps
