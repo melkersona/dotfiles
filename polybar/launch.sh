@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-MODULES="i3 xwindow time volume"
+MODULES="i3 xwindow time volume moonphase"
 
 killall -q polybar
 
