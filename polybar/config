@@ -146,7 +146,7 @@ cursor-scroll = ns-resize
 
 [module/moon]
 type = custom/script
-exec = moonphase
+exec = moonphase phase
 interval = 900
 
 [module/xwindow]
