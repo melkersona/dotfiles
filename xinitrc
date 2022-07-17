@@ -53,7 +53,10 @@ fi
 #xterm -geometry 80x50+494+51 &
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
+exec xrandr --output DP-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 1920x0 --rotate normal
 exec i3
+exec picom -b
+exec redshift
 eval $(pulseaudio --start)
 eval $(gnome-keyring-daemon --start)
 export SSH_AUTH_SOCK
