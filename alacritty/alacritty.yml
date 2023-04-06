@@ -373,9 +373,9 @@ colors:
   # When set to `true`, selected text will be copied to the primary clipboard.
   #save_to_clipboard: false
 
-#cursor:
+cursor:
   # Cursor style
-  #style:
+  style:
     # Cursor shape
     #
     # Values for `shape`:
@@ -392,6 +392,7 @@ colors:
     #   - On: Enable blinking by default
     #   - Always: Force the cursor to always blink
     #blinking: Off
+    blinking: Always
 
   # Vi mode cursor style
   #
@@ -403,6 +404,8 @@ colors:
 
   # Cursor blinking interval in milliseconds.
   #blink_interval: 750
+  #
+  blink_timeout: 0
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
@@ -429,6 +432,12 @@ colors:
 #  program: /bin/bash
 #  args:
 #    - --login
+shell:
+  program: /usr/bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux attach || tmux"
 
 # Startup directory
 #
