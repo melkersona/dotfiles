@@ -7,5 +7,6 @@ export PATH
 export LD_LIBRARY_PATH=$VULKAN_SDK/lib:$LD_LIBRARY_PATH
 export VK_LAYER_PATH=$VULKAN_SDK/etc/vulkan/explicit_layer.d
 
+export EDITOR=vim
 export TERMINAL=alacritty
 export GTK_THEME=Adwaita:dark
