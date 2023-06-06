@@ -216,6 +216,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 #user
+bindsym $mod+Shift+O exec dm-tool switch-to-greeter
 bindsym $mod+x exec --no-startup-id "import -window root ~/screenshot.png"
 bindsym $mod+m scratchpad show
 bindsym $mod+shift+m move scratchpad
