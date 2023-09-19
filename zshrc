@@ -102,3 +102,6 @@ source $ZSH/oh-my-zsh.sh
 #
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+
+export TERMINAL=/usr/bin/alacritty
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
