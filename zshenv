@@ -10,3 +10,4 @@ export VK_LAYER_PATH=$VULKAN_SDK/etc/vulkan/explicit_layer.d
 export EDITOR=vim
 export TERMINAL=alacritty
 export GTK_THEME=Adwaita:dark
+export BROWSER=firefox
