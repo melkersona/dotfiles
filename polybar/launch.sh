@@ -9,4 +9,4 @@ for m in $(polybar -m | cut -d ":" -f1); do
 	done
 done
 
-MONITOR=DP-0 polybar -r tray
+MONITOR=DP-6 polybar -r tray
