@@ -238,9 +238,9 @@ exec_always --no-startup-id ~/.fehbg
 exec_always --no-startup-id picom -b
 exec --no-startup-id redshift
 
-set $screen1 primary DP-1 DP-0
-set $screen2 DP-2 primary DP-1
-set $screen3 DP-3 DP-2 primary
+set $screen1 DP-6 DP-4
+set $screen2 DP-4 DP-6
+set $screen3 DP-0 DP-6 
 workspace $ws1 output $screen1
 workspace $ws2 output $screen2
 workspace $ws3 output $screen3
