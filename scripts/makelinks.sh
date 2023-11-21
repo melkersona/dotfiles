@@ -1,6 +1,11 @@
 #! /bin/sh
-SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+GITPATH="$( cd -- "$(dirname "$0")/.." >/dev/null 2>&1 ; pwd -P )"
+echo $GITPATH
+GITCONFIGPATH=$GITPATH/config
 CONFIGPATH=$HOME/.config
+GITSCRIPTPATH=$GITPATH/script
+GITHOMEPATH=$GITPATH/home
+
 #/home/$USER/dev/dotfiles
 #echo $SCRIPTPATH
 #/home/$USER/.config
@@ -18,10 +23,18 @@ CONFIGPATH=$HOME/.config
 #rofi
 #terminator
 #tmux
-mkdir -p $HOME/.config
-for x in $SCRIPTPATH/../config/*; do
-	mkdir -p $CONFIGPATH/$x
-	ln -s $SCRIPTPATH/../config/$x $HOME/.config/$x
+mkdir -p $CONFIGPATH
+for x in $GITCONFIGPATH/*; do
+#	echo $(basename $x)
+#	mkdir -p $CONFIGPATH/$x
+	ln -sf "$GITCONFIGPATH/$(basename $x)" "$CONFIGPATH/$(basename $x)"
+#	echo $(basename $x)
+done
+
+for x in $GITHOMEPATH/*; do
+#	echo $(basename $x)
+#	mkdir -p $CONFIGPATH/$x
+	ln -sf "$GITHOMEPATH/$(basename $x)" "$HOME/.$(basename $x)"
 #	echo $(basename $x)
 done
 
