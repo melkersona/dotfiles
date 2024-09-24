@@ -1,0 +1,43 @@
+[colors.bright]
+black = "#24242c"
+blue = "#53a5a8"
+cyan = "#d3869b"
+green = "#676767"
+magenta = "#8ec07c"
+red = "#cc3831"
+white = "#39659d"
+yellow = "#9e56bb"
+
+[colors.normal]
+black = "#1f1f27"
+blue = "#458588"
+cyan = "#b16286"
+green = "#515151"
+magenta = "#689d6a"
+red = "#bf332d"
+white = "#2d527f"
+yellow = "#8a49a3"
+
+[colors.primary]
+background = "#16161d"
+foreground = "#98aeb1"
+
+[cursor]
+blink_timeout = 0
+
+[cursor.style]
+blinking = "Always"
+
+[font]
+size = 24
+
+[font.normal]
+family = "Caskaydia Cove Nerd Font"
+style = "Regular"
+
+[shell]
+args = ["-l", "-c", "tmux attach || tmux"]
+program = "/usr/bin/zsh"
+
+[window]
+opacity = 1.0
