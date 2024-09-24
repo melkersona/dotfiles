@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="agnoster"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -106,5 +106,7 @@ source /usr/share/fzf/completion.zsh
 export TERMINAL=/usr/bin/alacritty
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
-powerline-daemon -q
-. /usr/share/powerline/bindings/zsh/powerline.zsh
+ssh-add ~/.ssh/sheco_it
+
+#powerline-daemon -q
+#. /usr/share/powerline/bindings/zsh/powerline.zsh
