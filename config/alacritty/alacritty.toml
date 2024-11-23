@@ -35,9 +35,11 @@ size = 24
 family = "Cascadia Code"
 style = "Regular"
 
-[shell]
+[terminal.shell]
 args = ["-l", "-c", "tmux attach || tmux"]
 program = "/usr/bin/zsh"
 
 [window]
 opacity = 1.0
+
+[terminal]
