@@ -235,11 +235,11 @@ client.background	#FFFFFF
 #exec_always --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-1 --off --output DP-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off --output DP-2 --off --output DP-3 --off
 #exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.png
 exec_always --no-startup-id ~/.fehbg
-exec_always --no-startup-id picom -b
+exec_always --no-startup-id picom -b -o0
 exec --no-startup-id redshift
 
-set $screen1 primary DP-0 HDMI-0
-set $screen2 HDMI-0 primary DP-0
+set $screen1 primary DisplayPort-0 DisplayPort-1
+set $screen2 DisplayPort-1 primary DisplayPort-0
 workspace $ws1 output $screen1
 workspace $ws2 output $screen2
 workspace $ws3 output $screen1
